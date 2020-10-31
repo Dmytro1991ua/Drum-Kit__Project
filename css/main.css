@@ -1,0 +1,78 @@
+:root {
+    --color-dark-blue: #090c1b;
+    --color-spring-green: #03fc66;
+    --color-green: #207542;
+    --color-lighter-blue: #153c6b;
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/* General Styles */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Mukta', sans-serif; /* font-family: 'Grandstander', cursive;*/
+    font-weight: 400;
+    box-sizing: border-box;
+    position: relative;
+    background-image: radial-gradient(var(--color-spring-green), var(--color-green));
+    color: var(--color-white);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.drum-kit {
+   
+}
