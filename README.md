@@ -2,7 +2,7 @@ Hey Everyone. Welcome to my journey as a Front-End Developer where I am striving
 
 # Drum-Kit__Project
 
-#### A project of an awesome Drum Kit. The штspiration for this project has come after Wes Bos Javascript 30 day challenge. The project seems to be quite simple, but I couldn't help myself and just passed by as a huge fan of Hard Rock and Heavy Metal, in particular, drum kits.
+##### A project of an awesome Drum Kit. The inspiration for this project has come after Wes Bos Javascript 30 day challenge. The project seems to be quite simple, but I couldn't help myself and just passed by as a huge fan of Hard Rock and Heavy Metal, in particular, drum kits.
 
 #### HTML/HTML5, CSS3, BEM, JS, Responsive Web Design, Mobile First Approach.
 
