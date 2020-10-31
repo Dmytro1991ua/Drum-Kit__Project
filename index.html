@@ -5,22 +5,108 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Drum-Kit__Project</title>
+   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
    <div class="wrapper">
-      <h1 class="heading-1">Awesome Drum Kit</h1>
-      <h2 class="heading-2">Let's Rock</h2>
+      <header class="header">
+         <h1 class="heading-1">Awesome Drum Kit</h1>
+         <h2 class="heading-2">Let's Rock</h2>
+      </header>
       <section class="drum-kit">
          <figure class="drum-kit__img-box">
             <img class="drum-kit__img" src="img/1.png" alt="Drum Kit">
          </figure>
+         <div class="drum-kit__keys">
+            <button class="drum-kit__key drum-kit__key--q" data-key="KeyQ">Q</button>
+            <button class="drum-kit__key drum-kit__key--r" data-key="KeyR">R</button>
+            <button class="drum-kit__key drum-kit__key--w" data-key="KeyW">W</button>
+            <button class="drum-kit__key drum-kit__key--e" data-key="KeyE">E</button>
+            <button class="drum-kit__key drum-kit__key--a" data-key="KeyA">A</button>
+            <button class="drum-kit__key drum-kit__key--s" data-key="KeyS">S</button>
+            <button class="drum-kit__key drum-kit__key--d" data-key="KeyD">D</button>
+            <button class="drum-kit__key drum-kit__key--f" data-key="KeyF">F</button>
+         </div>
+         <div class="drum-kit__sounds">
+            <audio src="sounds/crash.wav" class="drum-kit__sound" data-key="KeyQ"></audio>
+            <audio src="sounds/Ride-cymbal.wav" class="drum-kit__sound" data-key="KeyR"></audio>
+            <audio src="sounds/tom-small.wav" class="drum-kit__sound" data-key="KeyW"></audio>
+            <audio src="sounds/tom-large.wav" class="drum-kit__sound" data-key="KeyE"></audio>
+            <audio src="sounds/hi-hat.wav" class="drum-kit__sound" data-key="KeyA"></audio>
+            <audio src="sounds/Snare.wav" class="drum-kit__sound" data-key="KeyS"></audio>
+            <audio src="sounds/kick.wav" class="drum-kit__sound" data-key="KeyD"></audio>
+            <audio src="sounds/floor-Tom.wav" class="drum-kit__sound" data-key="KeyF"></audio>
+         </div>
       </section>
-      <footer class="drum-kit-details">
-         <div class="drum-kit-details__body">
-            
+      <footer class="key-mapping">
+         <h3 class="heading-3">Key Mapping:</h3>
+         <div class="key-mapping__body">
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">Q</span>
+               </div>
+               <span class="key-mapping__key-info">Crash</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">R</span>
+               </div>
+               <span class="key-mapping__key-info">Ride</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">W</span>
+               </div>
+               <span class="key-mapping__key-info">Tom Small</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">E</span>
+               </div>
+               <span class="key-mapping__key-info">Tom Large</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">A</span>
+               </div>
+               <span class="key-mapping__key-info">Hi-Hat Cymbal</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">S</span>
+               </div>
+               <span class="key-mapping__key-info">Snare</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">D</span>
+               </div>
+               <span class="key-mapping__key-info">Kick</span>
+            </div>
+            <div class="key-mapping__item">
+               <div class="key-mapping__key-box">
+                  <span class="key-mapping__key">F</span>
+               </div>
+               <span class="key-mapping__key-info">Floor Tom</span>
+            </div>
          </div>
       </footer>
    </div>

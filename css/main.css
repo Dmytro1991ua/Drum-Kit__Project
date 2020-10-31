@@ -73,6 +73,141 @@ body {
     overflow-x: hidden;
 }
 
+/* Header */
+
+.header {
+    width: 100%;
+    background-color: var(--color-lighter-blue);
+    padding: 1rem;
+    text-align: center;
+}
+
+.heading-1 {
+    font-size: calc(25px + 16 * ((100vw - 320px) / (1920 - 320)));
+}
+
+.heading-2 {
+    font-size: calc(18px + 22 * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 400;
+}
+
+.heading-3 {
+    font-size: calc(17px + 18 * ((100vw - 320px) / (1920 - 320)));
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+/* Drum Kit section */
+
 .drum-kit {
-   
+    flex: 1 1 auto;
+    position: relative;
+}
+
+.drum-kit__img-box {
+    position: relative;
+}
+
+.drum-kit__img {
+    max-width: max-content;
+    width: 48rem;
+    margin: 0 auto;
+}
+
+.drum-kit__keys {}
+
+.drum-kit__key {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    color: var(--color-white);
+    border: none;
+    border-radius: .4rem;
+    background-color: var(--color-dark-blue);
+}
+
+.drum-kit__key:focus {
+   outline: none;
+}
+.drum-kit__key--q {
+    top: 3rem;
+    left: 9rem;
+}
+
+.drum-kit__key--r {
+    right: 9rem;
+    top: 4rem;
+}
+
+.drum-kit__key--w {
+    top: .4rem;
+    left: 21rem;
+}
+
+.drum-kit__key--e {
+    top: .4rem;
+    left: 24.5rem;
+}
+
+.drum-kit__key--a {}
+
+.drum-kit__key--s {}
+
+.drum-kit__key--d {}
+
+.drum-kit__key--f {}
+
+.drum-kit__sounds {}
+
+.drum-kit__sound {}
+
+/* Footer */
+
+.key-mapping {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-lighter-blue);
+    padding: 1rem;
+}
+
+.key-mapping__body {
+    flex: 0 1 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.key-mapping__item {
+    flex: 0 1 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.key-mapping__item:last-child {
+    margin-bottom: 0;
+}
+
+.key-mapping__key-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color-green);
+    border-radius: .7rem;
+    margin-right: 1rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.key-mapping__key-box:hover {
+    background-color: var(--color-spring-green);
+}
+
+.key-mapping__key {}
+
+.key-mapping__key-info {
+    font-size: calc(15px + 16 * ((100vw - 320px) / (1920 - 320)));
 }
