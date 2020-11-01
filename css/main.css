@@ -61,7 +61,10 @@ body {
     font-weight: 400;
     box-sizing: border-box;
     position: relative;
-    background-image: linear-gradient(var(--color-black), var(--color-nero));
+    background-color: var(--color-dark-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     color: var(--color-white);
 }
 
@@ -105,6 +108,9 @@ body {
 .drum-kit {
     flex: 1 1 auto;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 29em) {
@@ -123,15 +129,21 @@ body {
     margin: 0 auto;
 }
 
+@media (min-width: 21em) {
+    .drum-kit__img {
+        width: 51rem;
+    }
+}
+
 @media (min-width: 29em) {
     .drum-kit__img {
-        width: 53rem;
+        width: 71rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__img {
-        width: 63rem;
+        width: 73rem;
     }
 }
 
@@ -163,7 +175,7 @@ body {
 
 .drum-kit__key:hover {
     background-color: var(--color-spring-green);
-     border: 2px solid var(--color-lighter-blue);
+    border: 2px solid var(--color-white);
 }
 
 @media (min-width: 91em) {
@@ -178,209 +190,266 @@ body {
 }
 
 .drum-kit__key--q {
-    top: 2.4rem;
+    top: .3rem;
     left: 8.3rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--q {
+        top: 7.4rem;
+        left: 11rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--q {
-        top: 1.4rem;
-        left: 7rem;
+        top: 4.4rem;
+        left: 15rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--q {
-        top: 1.4rem;
-        left: 9rem;
+        top: 5.4rem;
+        left: 13rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--q {
         top: 2.4rem;
-        left: 11rem;
+        left: 10rem;
     }
 }
 
 .drum-kit__key--r {
     right: 9rem;
-    top: 4rem;
+    top: .7rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--r {
+        right: 10rem;
+        top: 8.7rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--r {
-        right: 7rem;
-        top: 2rem;
+        right: 15rem;
+        top: 5rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--r {
-        right: 9rem;
-        top: 2rem;
+        right: 13rem;
+        top: 6rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--r {
-        right: 11rem;
-        top: 3rem;
+        right: 10rem;
+        top: 4rem;
     }
 }
 
 .drum-kit__key--w {
-    top: .4rem;
-    left: 20rem;
+    top: 3.4rem;
+    left: 18rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--w {
+        top: 12.4rem;
+        left: 19.3rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--w {
-        top: 2.4rem;
+        top: 10.4rem;
+        left: 27rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--w {
-        top: 4.4rem;
-        left: 24rem;
+        top: 11.4rem;
+        left: 28rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--w {
-        top: 5.4rem;
-        left: 30rem;
-    }
-}
-
-.drum-kit__key--e {
-    top: .4rem;
-    left: 25.5rem;
-}
-
-@media (min-width: 29em) {
-    .drum-kit__key--e {
-        top: 2.4rem;
+        top: 9.4rem;
         left: 29.5rem;
     }
 }
 
+.drum-kit__key--e {
+    top: 3.4rem;
+    left: 26.5rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--e {
+        top: 12.4rem;
+        left: 28.5rem;
+    }
+}
+
+@media (min-width: 29em) {
+    .drum-kit__key--e {
+        top: 10.4rem;
+        left: 39.5rem;
+    }
+}
+
 @media (min-width: 75em) {
     .drum-kit__key--e {
-        top: 4.4rem;
-        left: 35.5rem;
+        top: 11.4rem;
+        left: 41.5rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--e {
-        top: 5.4rem;
-        left: 43.5rem;
+        top: 9.4rem;
+        left: 43.2rem;
     }
 }
 
 .drum-kit__key--a {
-    top: 8.4rem;
+    top: 9.4rem;
     left: 8.3rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--a {
+        top: 19.4rem;
+        left: 9.3rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--a {
-        top: 7.4rem;
-        left: 6.3rem;
+        top: 18.8rem;
+        left: 14.3rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--a {
-        top: 8.4rem;
-        left: 7.3rem;
+        top: 14.4rem;
+        left: 9.3rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--a {
-        top: 10.4rem;
+        top: 11.4rem;
         left: 9.3rem;
     }
 }
 
 .drum-kit__key--s {
-    top: 6rem;
-    left: 15.3rem;
+    top: 8rem;
+    left: 15rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--s {
+        top: 17rem;
+        left: 16rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--s {
-        top: 8rem;
-        left: 16.3rem;
+        top: 18rem;
+        left: 22.3rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--s {
-        top: 10rem;
-        left: 20.3rem;
+        top: 18rem;
+        left: 23.3rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--s {
-        top: 13rem;
-        left: 25.3rem;
+        top: 16rem;
+        left: 24.3rem;
     }
 }
 
 .drum-kit__key--d {
-    top: 11rem;
+    top: 12.7rem;
     left: 22.3rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--d {
+        top: 22.4rem;
+        left: 23.7rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--d {
-        top: 13.5rem;
-        left: 24.4rem;
+        top: 23.5rem;
+        left: 33.6rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--d {
-        top: 16.5rem;
-        left: 29.4rem;
+        top: 24.5rem;
+        left: 34.4rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--d {
-        top: 19.6rem;
+        top: 20.6rem;
         left: 36.8rem;
     }
 }
 
 .drum-kit__key--f {
     right: 16rem;
-    top: 9rem;
+    top: 11rem;
+}
+
+@media (min-width: 21em) {
+    .drum-kit__key--f {
+        right: 17rem;
+        top: 20rem;
+    }
 }
 
 @media (min-width: 29em) {
     .drum-kit__key--f {
-        right: 18rem;
-        top: 11.2rem;
+        right: 24rem;
+        top: 22.2rem;
     }
 }
 
 @media (min-width: 75em) {
     .drum-kit__key--f {
-        right: 21rem;
-        top: 14.2rem;
+        right: 25rem;
+        top: 22.2rem;
     }
 }
 
 @media (min-width: 91em) {
     .drum-kit__key--f {
-        right: 27rem;
-        top: 17.2rem;
+        right: 26rem;
+        top: 21.2rem;
     }
 }
 
