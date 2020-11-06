@@ -173,11 +173,6 @@ body {
     transform: scale(1.1);
 }
 
-.drum-kit__key:hover {
-    background-color: var(--color-spring-green);
-    border: 2px solid var(--color-white);
-}
-
 @media (min-width: 91em) {
     .drum-kit__key {
         width: 4rem;
