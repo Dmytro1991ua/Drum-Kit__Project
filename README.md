@@ -2,6 +2,8 @@ Hey Everyone. Welcome to my journey as a Front-End Developer where I am striving
 
 # Drum-Kit__Project
 
+![screenshot-dmytro1991ua-github-io-Drum-Kit__Project-1613232442503](https://user-images.githubusercontent.com/61331410/107854696-64917900-6e26-11eb-8c61-029e6520c0fc.png)
+
 ##### A project of an awesome Drum Kit. The inspiration for this project has come after Wes Bos Javascript 30 day challenge. The project seems to be quite simple, but I couldn't help myself and just passed by as a huge fan of Hard Rock and Heavy Metal, in particular, drum kits.
 
 Stack of technologies which were used to develop a particular project:
